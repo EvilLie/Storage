@@ -46,15 +46,7 @@ namespace Laba
 
         private void Update_button_Click(object sender, RoutedEventArgs e)
         {
-            double price = 0.0;
-            orders = orderService.correctAllList();
-            foreach (Order o in orders)
-            {
-                price += o.Price;
-            }
-
-
-
+            orderService.createRecord();
         }
 
         private void Add_button_Click(object sender, RoutedEventArgs e)
