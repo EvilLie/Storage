@@ -1,0 +1,22 @@
+﻿<Window x:Class="Laba.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkBlue"/>
+                <GradientStop Color="Tan" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Registration page" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="40" Foreground="White" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="LoginRegistrationTextBox" HorizontalAlignment="Center" Margin="0,151,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="320" Height="40" FontSize="18" TextAlignment="Center" Background="#FF828282" Foreground="White"/>
+        <TextBox x:Name="PasswordRegistrationTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="320" Height="40" TextAlignment="Center" Background="#FF828282" Foreground="White" FontSize="18" Margin="0,207,0,0"/>
+        <Button x:Name="RegistrationButton" Content="Registrate" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Width="150" Height="40" FontSize="16" Click="RegistrationButton_Click"/>
+        <Button x:Name="BackButton" Content="Back to login page" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="180" Height="36" FontSize="16" Click="BackButton_Click"/>
+    </Grid>
+</Window>
